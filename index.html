@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Poster Project</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <!--Start of Container For Movie Posters-->
+    <div class="container">
+        <h1>Click a Poster to Play a Song!</h1>
+        <br>        
+        <div class="gallery"> 
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getSong(this.id, event)" >
+                <img class="gallery__img" src="images/dunkirk.jpg" alt="supermarine">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/bladerunner.jpg" alt="bladerunner 2049">
+            </figure>
+
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/skyfall.jpg" alt="skyfall adele">
+            </figure>
+
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/hobbit.jpg" alt="misty mountains richard armitage">
+            </figure>
+
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/interstellar.jpg" alt="day one dark hans zimmer">
+            </figure>
+
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img class="gallery__img" src="images/sandlot.jpg" alt="tequila the champs">
+            </figure>
+        </div>
+        <br>
+        <button onclick="stopSnippet()" id="buttons">Stop Song</button>
+    </div>
+    
+</body>
+</html>
